@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <h1 id="go-back"><a href="index.html">Go back</a></h1>
+
+    <div class="quiz-container">
+        <form class="quiz-form" action="" onsubmit="return false">
+            <h2>Triangles Quiz</h2>
+            <div class="question-container">
+                <p>1. what is third angle of a triangle if 1st angle is 45&deg and and 2nd angle is 45&deg</p>
+                <div class="options">
+                    <lable><input required type="radio" name="q1" value="45">45&deg</lable>
+                    <lable><input required type="radio" name="q1" value="60">60&deg</lable>
+                    <lable><input required type="radio" name="q1" value="90">90&deg</lable>
+                </div>
+            </div>
+            <hr>
+            <div class="question-container">
+                <p>2. If a triangle has 2 sides with equal lengths and 75&deg angle between them. What is the type of
+                    triangle?
+                </p>
+                <div class="options">
+                    <lable><input required type="radio" name="q2" value="Equilateral">Equilateral</lable>
+                    <lable><input required type="radio" name="q2" value="Isosceles">Isosceles</lable>
+                    <lable><input required type="radio" name="q2" value="Right Angle traingle">Right Angle traingle
+                    </lable>
+                </div>
+            </div>
+            <hr>
+            <div class="question-container">
+                <p>3. This type of triangle has one 90&deg degree angle
+                </p>
+                <div class="options">
+                    <lable><input required type="radio" name="q3" value="Acute">Acute</lable>
+                    <lable><input required type="radio" name="q3" value="Right">Right</lable>
+                    <lable><input required type="radio" name="q3" value="Obtuse">Obtuse</lable>
+                </div>
+            </div>
+            <hr>
+            <div class="question-container">
+                <p>4. What do you call a triangle whose sides are all equal?
+                </p>
+                <div class="options">
+                    <lable><input required type="radio" name="q4" value="Equilateral">Equilateral</lable>
+                    <lable><input required type="radio" name="q4" value="Isosceles">Isosceles</lable>
+                    <lable><input required type="radio" name="q4" value="Scalene">Scalene</lable>
+                </div>
+            </div>
+            <hr>
+            <div class="question-container">
+                <p>5. Which of the following statements are true?
+                </p>
+                <div class="options">
+                    <lable><input required type="radio" name="q5"
+                            value="A scalene triangle has at least one obtuse angle">A
+                        scalene triangle has at least one obtuse angle</lable>
+                    <lable><input required type="radio" name="q5"
+                            value="External angles of a triangle have a sum of 180ºs">External angles of a triangle have
+                        a sum of 180º</lable>
+                    <lable><input required type="radio" name="q5" value="An equilateral triangle is also isosceles">An
+                        equilateral triangle is also isosceles</lable>
+                </div>
+            </div>
+            <hr>
+            <div class="question-container">
+                <p>4. A triangle can have
+                </p>
+                <div class="options">
+                    <lable><input required type="radio" name="q6" value="one right angle">one right angle</lable>
+                    <lable><input required type="radio" name="q6" value="two right angles">two right angles</lable>
+                    <lable><input required type="radio" name="q6" value="none">none</lable>
+                </div>
+            </div>
+            <hr>
+            <div class="question-container">
+                <p>7. If the measure of one angle of a triangle is 95&deg, then which of the following cannot be the
+                    measure of remaining angles?
+                </p>
+                <div class="options">
+                    <lable><input required type="radio" name="q7" value="80">80&deg</lable>
+                    <lable><input required type="radio" name="q7" value="90">90&deg</lable>
+                    <lable><input required type="radio" name="q7" value="15">15&deg</lable>
+                </div>
+            </div>
+            <hr>
+            <div class="question-container">
+                <p>8. If a triangle has angles 135&deg, 15&deg, 30&deg. Is it an obtuse triangle?</p>
+                <div class="options">
+                    <lable><input required type="radio" name="q8" value="True">True</lable>
+                    <lable><input required type="radio" name="q8" value="False">False</lable>
+                </div>
+            </div>
+            <hr>
+            <div class="question-container">
+                <p>9. In an equilateral triangle, what is the sum of any two of its angles?
+                </p>
+                <div class="options">
+                    <lable><input required type="radio" name="q9" value="120">120&deg</lable>
+                    <lable><input required type="radio" name="q9" value="180">180&deg</lable>
+                    <lable><input required type="radio" name="q9" value="60">60&deg</lable>
+                </div>
+            </div>
+            <hr>
+            <div class="question-container">
+                <p>10. If a triangle has 2 sides with equal lengths and 60&deg angle between them. What is the type of
+                    triangle?
+                </p>
+                <div class="options">
+                    <lable><input required type="radio" name="q10" value="Equilateral">Equilateral</lable>
+                    <lable><input required type="radio" name="q10" value="Isosceles">Isosceles</lable>
+                    <lable><input required type="radio" name="q10" value="Both">Both</lable>
+                </div>
+            </div>
+            <div>
+                <button class="btn-submit" id="submit-ans">Submit</button>
+                <button type="reset" id="btn-reset">Reset</button>
+            </div>
+        </form>
+        <div id="output"></div>
+        <script src=" quiz.js"></script>
+    </div>
+</body>
+
+</html>

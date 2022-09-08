@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+	--primary-color: slateblue;
+	--background-color: white;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+  display:border-box;
+}
+
+body {
+	background: var(--background-color);
+  padding-bottom: 10px;
+}
+
+.heading {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.container {  
+	padding: 2rem;
+	border: 2px solid var(--primary-color);
+	border-radius: 0.5rem;    
+  width: 50%;
+	margin: auto;
+}
+
+.quiz-container {
+  padding: 2rem;
+	border: 2px solid var(--primary-color);
+	border-radius: 0.5rem;
+  width: 50%;
+	margin: auto;
+}
+.container p {
+	margin-bottom: 1rem;
+}
+
+label {
+	margin-right: 0.5rem;
+  color: var(--primary-color);
+}
+
+.options{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+h2 {
+  text-decoration:underline;
+  margin-bottom:10px;
+  text-align: center;
+}
+
+button {
+  margin-top: 20px;;
+	padding: 0.5rem;
+	background: slateblue;
+	color: white;
+	border: 1px solid var(--primary-color);
+	border-radius: 0.25rem;
+	width: 100%;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+  cursor: pointer;
+}
+
+#output {
+	text-align: center;
+	margin: 2rem 0;
+  font-size: 1rem;
+}
+
+.question-container {
+	margin: 1rem 0;
+  padding:10px 0px;
+  color: var(--primary-color);
+}
+
+.question-container p{
+  padding:10px 0px;
+}
+
+.question-container lable{
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.container input {
+	padding: 0.5rem;
+	font-size: 1rem;
+	width: 97%;
+	margin: 0.5rem 1rem 1rem 0;
+}
+
+.formula {
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	padding: 0.5rem;
+	border: 2px solid var(--primary-color);
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color);
+	padding: 0.5rem;
+	font-weight: 1000;
+	font-size: 1rem;
+}
+
+.item-active {
+	border-bottom: 2px solid;
+	font-weight: bold;
+}
+
+#container{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  height:280px;
+  width:280px;
+  margin:auto;
+  position: relative;
+  top:25vh;
+}
+
+#container a{
+  height:103px;
+  width:103px;
+  background-color: slateblue;
+  color: white;
+  margin:10px;
+  
+}
+
+.one{
+  border-bottom-right-radius: 10px;
+  animation: slide-left-down 1s cubic-bezier(0.26,-0.01, 0, 1);
+}
+.two{
+  border-top-right-radius: 10px;
+  animation: slide-left-up 1s cubic-bezier(0.26,-0.01, 0, 1);
+}
+.three{
+  border-bottom-left-radius: 10px;
+  animation: slide-right-up 1s cubic-bezier(0.26,-0.01, 0, 1);
+}
+.four{
+  border-top-left-radius: 10px;
+  animation: slide-right-down 1s cubic-bezier(0.26,-0.01, 0, 1);
+}
+
+#container a:hover{
+  height:103px;
+  width:103px;
+  background-color: slateblue;
+  margin:10px;
+  transform: scale(1.1);
+  
+}
+
+#go-back{
+  text-align:center;
+  margin: 35px;
+}
+
+#go-back a{
+  background-color: slateblue;
+  font-weight: bolder;
+  font-size: 25px;
+  border-radius: 15px;
+  color:white;
+}
+
+@keyframes slide-right-down {
+  from {
+      transform: translate(40vw,40vw);
+  }
+  to {
+      transform: translateY(0vw,0vw);
+  }
+}
+
+@keyframes slide-right-up {
+  from {
+      transform: translate(40vw,-40vw);
+  }
+  to {
+      transform: translateY(0vw,0vw);
+  }
+}
+
+@keyframes slide-left-down {
+  from {
+    transform: translate(-40vw,-40vw);
+}
+to {
+    transform: translateY(0vw,0vw);
+}
+}
+
+@keyframes slide-left-up {
+  from {
+    transform: translate(-40vw,40vw);
+}
+to {
+    transform: translateY(0vw,0vw);
+}
+}
